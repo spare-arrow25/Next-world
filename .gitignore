@@ -1,1 +1,9 @@
 venv/
+.venv/
+.env
+*.pyc
+*.pyo
+*.pyd
+.idea/
+.vscode/
+*.DS_Store
