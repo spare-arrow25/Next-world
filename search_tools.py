@@ -6,7 +6,7 @@ import json
 from dotenv import load_dotenv
 
 # Load environment variables from a .env file
-load_dotenv()
+load_dotenv(dotenv_path='.env.search_tools')
 
 # --- Configuration ---
 # Get your credentials from the .env file

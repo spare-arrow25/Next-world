@@ -2,12 +2,17 @@
 
 import google.generativeai as genai
 import os
+from dotenv import load_dotenv
 
 # --- Configuration ---
 # This is the safest way to load your API key.
 # It reads an "environment variable" named GOOGLE_API_KEY.
+
+load_dotenv(dotenv_path='.env.search_tools')
+
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 try:
-    api_key = os.environ["GOOGLE_API_KEY"]
+    api_key = os.getenv("GOOGLE_API_KEY")
     genai.configure(api_key=api_key)
 except KeyError:
     print("🚨 Error: GOOGLE_API_KEY environment variable not set.")

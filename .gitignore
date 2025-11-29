@@ -1,9 +1,10 @@
 venv/
 .venv/
-.env
+.env.*
 *.pyc
 *.pyo
 *.pyd
 .idea/
 .vscode/
 *.DS_Store
+*.txt
